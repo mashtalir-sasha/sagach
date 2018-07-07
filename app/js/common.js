@@ -20,11 +20,11 @@ $(function() {
 	});
 
 	// Клик по гамбургеру на моб версии
-	$('.mob-mnu__humb').click(function() {
-		$('.mob-mnu-list').toggleClass('show');
+	$('.mnu-mob__link').click(function() {
+		$('.mnu-mob').toggleClass('show');
 	});
-	$('.mob-mnu__li').click(function() {
-		$('.mob-mnu-list').removeClass('show');
+	$('.nav-list__item').click(function() {
+		$('.mnu-mob').removeClass('show');
 	});
 
 	// Формирование полей и заголовков формы в мод окне
@@ -75,6 +75,26 @@ $(function() {
 			scrollTop: $('#top').offset().top
 		}, 300);
 		e.preventDefault();
+	});
+
+	$('.partners-slider').slick({
+		infinite: true,
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 
 });

@@ -1,9 +1,4 @@
 @import "vars"
-
-
-/*==========  Desktop First  ==========*/
-
-
 //Extra large: ≥1440px
 +media-breakpoint-down(xl)
 
@@ -12,30 +7,157 @@
 
 //Medium: ≥992px max-width: 1199px
 +media-breakpoint-down(md)
+	.nav
+		&-list
+			&__item
+				margin-right: 10px
+				a
+					font-size: 14px
+		&__btn
+			float: none
+			width: auto
+			font-size: 14px
+	.projects
+		&__patern
+			width: 280px
+	.palitra
+		&:before
+			display: none
 
 //Small: ≥768px max-width: 991px
 +media-breakpoint-down(sm)
+	.head
+		&__ttl
+			z-index: 1
+		&__txt
+			position: relative
+			z-index: 1
+		&__btn
+			position: relative
+			z-index: 1
+	.projects
+		&__patern
+			display: none
+		&-block
+			height: 300px
+		&-name.white
+			color: #000
+			&:before
+				background-color: #000
+	.trust
+		&__line
+			display: none
+		img
+			margin: 0 auto 20px
+	.partners
+		&__line
+			margin-bottom: 20px
+	.palitra
+		&__img
+			margin: 0 auto
+		&:after
+			bottom: 30px
+			width: 100%
+			border-right-width: 100vw
+	.services-block
+		margin-bottom: 20px
+		padding-bottom: 100px
+	.services
+		&-ttl
+			&:before
+				width: 100%
+				height: 100%
+	.work
+		&-title
+			&__ttl
+				margin-bottom: 20px
+	.row.mt
+		margin-top: 0
+	.foot
+		background-color: #a80707
+		&-map
+			display: none
+	.mnu-mob
+		position: absolute
+		left: 0
+		width: 100%
+		background-color: #fff
+		max-height: 0
+		transition: all ease .3s
+		overflow: hidden
+		&.show
+			max-height: 500px
+		&__link
+			cursor: pointer
+			width: 32px
+			height: 32px
+			float: right
+			background-image: url(../img/list.svg)
+			background-size: 32px 32px
+		.nav-list
+			display: block
+			margin-top: 20px
+			&__item
+				display: block
+				padding: 0 10px
+				&:last-child
+					margin-bottom: 20px
 
 //Extra small: ≥576px max-width: 767px
 +media-breakpoint-down(xs)
-
+	.head
+		&__ttl
+			text-align: center
+		&__txt
+			text-align: center
+		&__btn
+			float: none
+			margin: 0 auto
+	.projects
+		&-block
+			margin-bottom: 20px
+	.first-form
+		&-form
+			&__ttl
+				text-align: center
+			&__txt
+				margin: 0 auto 20px
+			.rline
+				margin: 0 auto 20px
+			.file
+				margin: 0 auto 20px
+			&__btn
+				margin: 0 auto
+	.trust-item
+		&__line
+			&_l3, &_l4
+				display: none
+		&__dot
+			&_3
+				display: none
+	.palitra
+		&__note
+			text-align: center
+	.services-ttl_second .services-ttl__btn
+		float: none
+	.services-ttl_first .services-ttl__ttl
+		text-align: left
 //Extra small: >0 max-width: 575px
 +media-breakpoint-down(xxs)
-
-
-/*==========  Mobile First  ==========*/
-
-//Extra small: <576px
-+media-breakpoint-up(xs)
-
-//Small: ≤576px
-+media-breakpoint-up(sm)
-
-//Medium: ≤768px
-+media-breakpoint-up(md)
-
-//Large: ≤992px
-+media-breakpoint-up(lg)
-
-//Extra large: ≤1200px
-+media-breakpoint-up(xl)
+	.head
+		&__line
+			width: 160px
+	.palitra
+		&__note
+			span
+				display: block
+	.calc
+		&-block
+			&__wrap
+				width: auto
+				float: none
+	.services
+		&-ttl
+			padding: 60px 20px
+	.foot-block
+		padding: 40px 0
